@@ -4,168 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="iphonex.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" charset="utf-8" defer="defer"></script>
     <title>iPhone X Design</title>
 </head>
 <body>
     <div class="body">
-        <div class="screen">
+        <div id="logo">
+            <span class="time1"></span>
+            <span class="prc1"></span>
+        </div>
+        <div class="window">
+            <button class="back"><</button><br />
+            <p class="show_info"></p>
+        </div>
+        <div class="screen" id="screen">
             <div class="head">
-                <span class="time">18:25</span>
+                <span class="time"></span>
                 <div class="microphone">
                     <span class="micro"></span><span class="webcam"></span>
                 </div>
                 <div class="net-bat">
                     <span></span><span></span><span></span><span></span><span></span>
-                    <span class="battery"></span>
+                    <span class="battery"><span class="prc"></span></span>
                 </div>
             </div>
             <div class="desktop">
                 <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
             </div>
             <div class="bottombar">
-                <span></span><span></span><span></span><span></span>
+                <span class="wa"></span>
+                <span class="fb"></span>
+                <span class="mail"></span>
+                <span class="info"></span>
             </div>
             <div class="navbar"></div>
         </div>
     </div>
-
-
-<style type="text/css" media="all">
     
+    <button id="on">Allumer</button>
+    <button id="off">Éteindre</button>
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    padding: 15px;
-}
-.body{
-    width: 330px;
-    height: 650px;
-    border: 5px solid rgb(43, 42, 42);
-    margin: auto;
-    border-radius: 20px;
-    padding: 0.5px;
-    background-color: black;
-}
-span{
-    display: inline-block;
-}
-.screen{
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgb(20, 20, 20);
-    border-radius: 20px;
-    padding: 10px;
-    background: linear-gradient(100deg , rgba(225, 228, 221, 0.87), rgb(247, 9, 64), rgb(233, 146, 75), rgb(67, 55, 233), rgb(128, 27, 211));
-}
-.head{
-    display: flex;
-    justify-content: space-around;
-}
-.microphone{
-    width: 150px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    margin-top: -9.5px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-.micro{
-    width: 40px;
-    height: 5px;
-    border-radius: 10px;
-    background-color: rgb(73, 71, 71);
-}
-.webcam{
-    width: 8px;
-    height: 8px;
-    border-radius: 20px;
-    background-color: rgb(73, 71, 71);
-    margin-left: 5px;
-}
-.net-bat span:nth-child(1){
-    width: 2px;
-    height: 2px;
-    background-color: white;
-}
-.net-bat span:nth-child(2){
-    width: 2px;
-    height: 3px;
-    background-color: white;
-}
-.net-bat span:nth-child(3){
-    width: 2px;
-    height: 4px;
-    background-color: white;
-}
-.net-bat span:nth-child(4){
-    width: 2px;
-    height: 5px;
-    background-color: white;
-}
-.net-bat span:nth-child(5){
-    width: 2px;
-    height: 6px;
-    background-color: white;
-}
-.battery{
-    width: 15px;
-    height: 5px;
-    background-color: WHITE;
-    border-radius: 5px;
-    text-align: center;
-}
-.desktop{
-    text-align: center;
-    padding: 10px;
-    height: 85%;
-}
-.desktop span{
-    width: 58px;
-    height: 55px;
-    background-color: black;
-    border-radius: 15px;
-    margin: 5px;
-    opacity: 0.2;
-}
-.bottombar{
-    width: 90%;
-    height: 70px;
-    background-color: #ccc;
-    opacity: 0.2;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-}
-.bottombar span{
-    width: 58px;
-    height: 55px;
-    background-color: black;
-    border-radius: 15px;
-}
-.navbar{
-    width: 50%;
-    height: 5px;
-    background-color: black;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 7px;
-}
-.bottombar span:hover,.desktop span:hover{
-    width: 60px;
-    height: 57px;
-    opacity: 1;
-}
-</style>
 </body>
 </html>
