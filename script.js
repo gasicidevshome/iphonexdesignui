@@ -42,7 +42,7 @@ on.onclick = function(){
 //extinction 
 off.onclick = function(){
     screen.style.display = "none";
-    logo.style.width = "100%";p
+    logo.style.width = "100%";
     logo.style.height = "100%"; 
     tim.style.display = "inline";
     pourcentt.style.display = "inline";
