@@ -31,24 +31,24 @@ navigator.getBattery().then(function(battery){
 })
 
 //Allumage 
-on.onclick = function(){
+on.addEventListener("click", function() {
     screen.style.display = "block"
     logo.style.width = "0";
     logo.style.height = "0";
     tim.style.display = "none";
     pourcentt.style.display = "none";
-}
+});
 
 //extinction 
-off.onclick = function(){
+off.addEventListener("click", function() {
     screen.style.display = "none";
     logo.style.width = "100%";
     logo.style.height = "100%"; 
     tim.style.display = "inline";
     pourcentt.style.display = "inline";
-}
+});
 
-info.onclick = function(){
+info.addEventListener("click", function() {
     let nav = "Navigateur : " + navigator.userAgent;
     let os = "Système d'exploitation : " + navigator.platform;
     let lang = "Langue du navigateur : " + navigator.language;
@@ -64,10 +64,10 @@ info.onclick = function(){
     screen.style.display = "none";
     win.style.display = "block";
 
-}
+});
 
-back.onclick = function(){
+back.addEventListener("click", function() {
     screen.style.display = "block";
     win.style.display = "none";
 
-}
+});
